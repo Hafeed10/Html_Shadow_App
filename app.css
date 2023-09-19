@@ -1,0 +1,827 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgb(234, 240, 241);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+}
+html{
+  scrollbar-color: red;
+}
+/* ========================================================== */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header{
+  width: 100%;
+}
+.header-area {
+  background-position: center center;
+  background-size: cover;
+}
+.navbar-area {
+  height: 13vh;
+}
+.site-navbar {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+a.site-logo {
+  font-size: 56px;
+  text-transform: uppercase;
+  color: rgb(0, 200, 255);
+  font-family: monospace;
+  text-decoration: none;
+}
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-navbar ul li a {
+  color: #837676;
+  padding: 20px;
+  font-size: 18px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.site-navbar ul li a:hover {
+  color: #444;
+}
+.nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span, 
+.nav-toggler span:before, 
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: .3s;
+}
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+/* ========================================================== */
+ 
+/* ========================================================== */
+.loop ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.loop ul a{
+  padding: 10px;
+  color: rgb(0, 200, 255);
+  font-size: 50px;
+  margin-top: 10px;
+  border-radius: 50%;
+  margin-left: 20px;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+}
+.home{
+  background-color: rgb(211, 222, 223);
+}
+.home:hover{
+  transition: all .3s ease;
+  background: #fff;
+}
+.About{
+  padding-left: 10px;
+  background-color: rgb(211, 222, 223);
+}
+.About:hover{
+  transition: all .3s ease;
+  background: #fff;
+}
+.pop{
+  background-color: rgb(211, 222, 223);
+}
+.pop:hover{
+  transition: all .3s ease;
+  background: #fff;
+}
+/* ========================================================== */
+
+/* ========================================================== */
+#main{
+   width: 100%;
+}
+#main section.wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    justify-content:center;
+   margin-left: 0px;
+}
+#main ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+#main ul li{
+  list-style: none;
+}
+
+.left{
+    width: 100%;
+}
+.right{
+  border-left:6px solid rgb(0, 200, 255);;
+    width: 100%;
+    display: flex;
+}
+.right p{
+    max-width: 500px;
+    font-size: 21px;
+    line-height: 30px;
+    padding: 40px;
+}
+#main h3{
+    font-size: 40px;
+    padding: 30px;
+    font-family: monospace;
+    color: rgb(26, 13, 99);
+}
+#main h1{
+    font-size: 70px;
+    line-height:50px;
+    font-family: monospace;
+    padding: 30px;
+    color: rgb(0, 200, 255);
+}
+/* ========================================================== */
+
+/* ========================================================== */
+#home{
+  width: 100%;
+}
+#home section.wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  padding: 40px;
+}
+#home .middile{
+  text-align: center;
+}
+#home .middile h1{
+  font-size: 70px;
+  color: rgb(26, 13, 99);
+  font-family: monospace;
+  padding-top: 100px;
+}
+#home .middile .max{
+  margin-top: 30px;
+}
+#home ul{
+  width: 70%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+#home ul li{
+  width: 100%;
+  list-style: none;
+  padding: 20px 10px 40px;
+  background: #eceeee;
+  padding: 3rem 2rem;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 3rem;
+  margin-left: 30px;
+}
+#home .icon{
+  font-size: 50px;
+  color: rgb(26, 13, 99);
+}
+#home h3{
+  font-size: 25px;
+  padding: 15px;
+}
+/* ========================================================== */
+
+
+/* ========================================================== */
+#middile{
+  width: 100%;
+  height: 30vh;
+}
+#middile section.wrapper{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.lpo{
+  display: flex;
+  justify-content: space-between;
+}
+.left-middile h4{
+  text-align: center;
+   font-size: 45px;
+   font-family: monospace;
+   color: rgb(26, 13, 99);
+   margin-left: 100px;
+}
+.left-middile p{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.right-middile p{
+  width:90%;
+  
+  max-width: 968px;
+  font-size: 20px;
+  float: left;
+  line-height: 25px;
+}
+/* ========================================================== */
+
+
+/* ========================================================== */
+.styip{
+  width: 100%;
+  height: 150vh;
+}
+.styip h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  color: rgb(26, 13, 99);
+}
+.styip section.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.styip ul{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 50px;
+}
+.hafeez{
+  display: flex;
+}
+.styip ul li{
+  list-style: none;
+  padding: 20px 10px 40px;
+  background: #eceeee;
+  padding: 3rem 2rem;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 3rem;
+  margin-left: 30px;
+}
+.styip ul li h3{
+  font-size: 35px;
+  font-family: monospace;
+  color: rgb(26, 13, 99);
+}
+.styip ul li p{
+  max-width: 968px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ========================================================== */
+
+
+/* ========================================================== */
+.box{
+  width: 100%;
+  height: 100vh;
+}
+.box section.wrapper{
+  display: flex;
+  justify-content:space-evenly ;
+}
+.box ul{
+  width: 60%;
+  display: flex;
+  margin-top: 100px;
+}
+.box ul li {
+  width: 70%;
+  list-style: none;
+  background: #eceeee;
+  padding: 3rem 2rem;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 3rem;
+  margin-left: 15px;
+}
+.box h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+  color: rgb(26, 13, 99);
+}
+.box img{
+  text-align: center;
+  width: 500px;
+}
+.box h3{
+  font-size: 30px;
+  font-family: monospace;
+  color: rgb(26, 13, 99);
+}
+.box .oi{
+  color: grey;
+}
+.box p{
+  padding: 10px;
+  line-height: 25px;
+}
+.box a{
+  text-decoration: none;
+}
+/* ========================================================== */
+
+/* ========================================================== */
+.Aboute{
+  width: 100%;
+  height: 80vh;
+}
+.Aboute section.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.Aboute h1{
+  text-align: center;
+  margin-top: 150px;
+  font-size: 40px;
+  color: rgb(26, 13, 99);
+}
+.Aboute ul{
+  display: flex;
+  align-items: center;
+}
+.Aboute ul li{
+  list-style: none;
+  width: 100%;
+  list-style: none;
+  background: #eceeee;
+  padding: 3rem 2rem;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 3rem;
+}
+.Aboute img{
+  width: 200px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+}
+/* ========================================================== */
+
+
+/* ========================================================== */
+.lorem{
+  width: 100%;
+  height: 70vh;
+}
+.lorem section.wrapper{
+  display: flex;
+  justify-content:space-evenly ;
+}
+.lorem ul{
+  width: 80%;
+  display: flex;
+  margin-top: 100px;
+}
+.lorem ul li {
+  width: 700px;
+  list-style: none;
+  background: #eceeee;
+  padding: 3rem 2rem;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 3rem;
+  margin-left: 35px;
+}
+.lorem h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+  color: rgb(26, 13, 99);
+}
+.lorem ul img{
+  width: 50px;
+  border-radius: 50%;
+}
+.lorem p{
+  padding: 10px;
+  line-height: 25px;
+}
+/* ========================================================== */
+
+
+/* ========================================================== */
+#Contacts{
+  width: 100%;
+}
+#Contacts section.wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+  padding: 40px;
+}
+#Contacts .middile{
+  text-align: center;
+}
+#Contacts .middile h1{
+  font-size: 70px;
+  color: rgb(26, 13, 99);
+  font-family: monospace;
+  padding-top: 100px;
+}
+#Contacts .middile p{
+  margin-top: 30px;
+}
+#Contacts ul{
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+}
+#Contacts ul li{
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  padding: 20px 10px 40px;
+  background: #eceeee;
+  padding: 3rem 2rem;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 3rem;
+  margin-left: 30px;
+}
+#Contacts .icon{
+  font-size: 50px;
+  color: rgb(26, 13, 99);
+}
+#Contacts h3{
+  font-size: 25px;
+  padding: 15px;
+}
+/* ========================================================== */
+
+/* ========================================================== */
+.ipusm{
+  width: 100%;
+  height: 30vh;
+}
+.ipusm h1{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(26, 13, 99);
+}
+.ipusm p{
+  text-align: center;
+  width: 50%;
+}
+.ipusm .koo{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.haf{
+  text-align: center;
+}
+.haf input{
+  width: 40%;
+  margin-top: 40px;
+  border-radius: 50px;
+  padding: 15px;
+  border: none;
+}
+button{
+  width: 10%;
+  border-radius: 50px;
+  padding: 15px;
+  background: #37a7ec;
+  border: none;
+  color: #fff;
+}
+/* ========================================================== */
+
+footer{
+  width: 100%;
+  height: 10vh;
+  border-top: 1px solid #fff;
+  box-shadow: 0 0 1px;
+}
+footer section.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+footer .site-logo{
+  font-size: 30px;
+  color: gray;
+}
+footer p{
+  color: gray;
+}
+  /* mobile breakpoint start */
+  @media screen and (max-width: 1024px) {
+    .container {
+      max-width: 720px;
+    }
+    .site-navbar ul li a {
+      padding: 25px;
+      font-size: 13px;
+    }
+    #home ul{
+      width: 100%;
+    }
+    #home .middile p{
+      margin-top: -10px;
+      font-size: 14px;
+    }
+    #home .middile h3{
+      font-size: 19px;
+    }
+    .left-middile h4{
+      font-size: 30px;
+      margin-bottom: 20px;
+   }
+   .left-middile p{
+    margin-top: 10px;
+   }
+   .right-middile p{
+    width:95%;
+    font-size: 16px;
+    float: left;
+    line-height: 25px;
+  }
+  .styip ul{
+    width: 100%;
+  }
+  .styip ul li h3{
+    font-size: 30px;
+  }
+  .styip ul li p{
+    font-size: 19px;
+  }
+  .box  h1{
+    margin-top: 350px;
+  }
+  .box ul li{
+     width: 70%;
+  }
+  .box img{
+    justify-content: flex-start;
+    text-align: center;
+    width: 300px;
+    float: right;
+  }
+  .Aboute h1{
+    margin-top: 250px;
+  }
+  .Aboute ul li{
+    width: 100%;
+    height: 50vh;
+  }
+  .Aboute img{
+    width: 150px;
+  }
+  .lorem ul{
+    width: 95%;
+  }
+  #Contacts .middile h1{
+    padding-top: 200px;
+  }
+  .ipusm{
+    width: 100%;
+    height: 50vh;
+  }
+}
+/* ====================================================== */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    .nav-toggler{
+      background: #444;
+      display: block;
+    }
+    .site-navbar {
+      min-height: 60px;
+    }
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 60px;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0,0,0,.75);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .site-navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .site-navbar ul li a {
+      padding: 25px;
+    }
+    .site-navbar ul li a:hover {
+    color: rgba(134, 117, 117, 0.1);
+    }
+    .site-navbar ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+    .intro-area h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    a.site-logo{
+      font-size: 46px;
+    }
+    #main h3{
+      font-size: 30px;
+    }
+    #main h1{
+      font-size: 50px;
+    }
+   .right p{
+    max-width: 1000px;
+    padding: 30px;
+    font-size: 19px;
+    }
+    #home ul{
+      width: 100%;
+      height: 50vh;
+      justify-content: space-between;
+    }
+    #home h3{
+      font-size: 25px;
+    }
+    .left-middile p{
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 100px;
+    }
+    .styip ul{
+      width: 100%;
+    }
+    .box  h1{
+      margin-top: 650px;
+    }
+    .box ul li{
+       width: 100%;
+    }
+    .box img{
+      text-align: center;
+      width: 300px;
+      float: right;
+    }
+    .box ul{
+      width: 100%;
+   
+    }
+    .lorem ul{
+      width: 100%;
+    }
+    #Contacts ul{
+      width: 100%;
+    }
+    footer p{
+      font-size: 13px;
+      color: gray;
+    }
+    footer .site-logo{
+      font-size: 30px;
+      color: gray;
+    }
+    button{
+      width: 12%;
+    }
+   
+}
+/* ================================================== */
+  @media all and (max-width: 424px) {
+      
+    .loop ul a{
+      display: none;
+    }
+    .lpo{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    #home ul{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .styip ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .Aboute ul{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .lorem ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #Contacts ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+}
+ /*===============================================  */
+  @media all and (max-width:380px){
+    #home .middile h1{
+      font-size:50px;
+    }
+    #home ul li{
+      margin-top: 20px;
+    }
+    .lpo{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 400px;
+    }
+    .left-middile h4{
+      text-align: start;
+    }
+    .left-middile p{
+      text-align:center;
+      font-size: 13px;
+    }
+    .right-middile p{
+      width:90%;
+      text-align: center;
+      margin-left: 45px;
+    }
+    .styip h1{
+      margin-top: 600px;
+    }
+    .styip ul {
+      width: 100%;
+    }
+    .styip ul li{
+      margin-top: 20px;
+    }
+    .styip ul li h3{
+      font-size: 25px;
+    }
+    .styip ul li p{
+      max-width: 968px;
+      text-align: start;
+      width: 120%;
+      font-size: 13px;
+      line-height: 25px;
+    
+    }
+}
